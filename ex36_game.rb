@@ -1,3 +1,8 @@
+# author: EllipseX
+# D.o.C.: jan-3-2017
+# purpose: Learn Ruby The Hard Way
+# Desc: it's a shit game that is somewhat stable
+
 choices = [] # maybe use this?
 #prompt = "> "
 
