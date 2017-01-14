@@ -340,6 +340,7 @@ def the_game
     city
   end
 
+# my dirty little fix.
   until !gameon
     the_game
   end
