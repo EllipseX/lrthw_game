@@ -16,9 +16,11 @@ To play:
 4: enjoy...hopefully.
 
 Known bugs:
-	--occasionally will end game abruptly when exiting inn or shop then leaving the city
+	X --occasionally will end game abruptly when exiting inn or shop then leaving the city
 		--does not occur if one does not enter the shop or inn (both are not relevant anyway)
-	
+		
+13/1/2017 -- Game crash has been fixed, but game can only be quit from camp for the time being.
+
 Report other bugs to ellipsexx@gmail.com
 
 
