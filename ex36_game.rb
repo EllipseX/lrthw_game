@@ -1,8 +1,3 @@
-# author: EllipseX
-# D.o.C.: jan-3-2017
-# purpose: Learn Ruby The Hard Way
-# Desc: it's a shit game that is somewhat stable
-
 choices = [] # maybe use this?
 #prompt = "> "
 
@@ -28,7 +23,7 @@ $in_boss = false
 
 $boss_alive = true
 
-##(the start of the game as well and campt method)
+##(the start of the game as well and camp method)
 def camp
   puts "You're at your camp #{$name}what will you do?
   \n1: cook\n2: rest\n3: stare into the sky\n4: quit the game\n5: venture into the forest"
@@ -319,7 +314,11 @@ end
 
 # start area loop
 ######### so I notice
+
 def the_game
+# adding an additional until statement after in_city seems to have fixed the crash
+# this does, however, mean the player can only soft quit from the camp. Fair enough for now.
+  gameon = true 
 
   until !$in_camp do
     camp
@@ -339,6 +338,10 @@ def the_game
 
   until !$in_city do
     city
+  end
+
+  until !gameon
+    the_game
   end
 
 end
